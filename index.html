@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="common.js" defer></script>
+</head>
+
+<body>
+	<div class="slider">
+		<img src="img/arrow-left.png" class="prev" alt="Prev">
+		<div class="slider__item">
+			<img src="img/chingching.jpg" alt="" class="active">
+			<img src="img/magichouse.jpg" alt="">
+			<img src="img/pegperego.jpg" alt="">
+			<img src="img/playpen.jpg" alt="">
+		</div>
+		<img src="img/arrow-right.png" class="next" alt="Next">
+	</div>
+
+	<form action="">
+		<label>
+			<div>Имя</div>
+			<input id="name" type="text">
+		</label>
+		<label>
+			<div>Дата рождения</div>
+			<input id="date" type="text">
+		</label>
+		<label>
+			<div>Телефон</div>
+			<input id="phone" type="text">
+		</label>
+		<label>
+			<div>E-mail</div>
+			<input id="email" type="text">
+		</label>
+		<label>
+			<div>Ваш комментарий </div>
+			<textarea id="" cols="30" rows="10"></textarea>
+		</label>
+		<br>
+		<button id="submit" type="submit">Отправить</button>
+	</form>
+
+	<div id="dialog" title="Ошибка">
+		<p>Вы ввели некорректные данные</p>
+	</div>
+	
+</body>
+
+</html>
